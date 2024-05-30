@@ -40,7 +40,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
             }
             if (incluirPropiedades != null)
             {
-                foreach (var incluirProp in incluirPropiedades.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries)
+                foreach (var incluirProp in incluirPropiedades.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(incluirProp); //ejemplo "Categoria, Marca"
                 }
@@ -65,7 +65,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
             }
             if (incluirPropiedades != null)
             {
-                foreach (var incluirProp in incluirPropiedades.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                foreach (var incluirProp in incluirPropiedades.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(incluirProp); //ejemplo "Categoria, Marca"
                 }
