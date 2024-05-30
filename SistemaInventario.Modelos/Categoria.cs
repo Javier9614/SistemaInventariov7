@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace SistemaInventario.Modelos
 {
-    public class Bodega
+    public class Categoria
     {
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage ="Nombre es requerido")]
-        [MaxLength(60,ErrorMessage ="Nombre debe ser Máximo 60 caracteres")]
+        [Required(ErrorMessage = "Nombre es requerido")]
+        [MaxLength(60, ErrorMessage = "Nombre debe ser Máximo 60 caracteres")]
         public string Nombre { get; set; }
 
         [Required(ErrorMessage = "Descripcion es requerido")]
@@ -24,3 +24,4 @@ namespace SistemaInventario.Modelos
         public bool Estado { get; set; }
     }
 }
+
